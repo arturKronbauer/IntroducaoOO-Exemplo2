@@ -12,14 +12,12 @@ public class Programa {
 		System.out.print("Informe o raio: ");
 		double raio = sc.nextDouble();
 		
-		Calculadora calc = new Calculadora();
-		
-		double c = calc.circunferencia(raio);
-		double v = calc.volume(raio);
+		double c = Calculadora.circunferencia(raio);
+		double v = Calculadora.volume(raio);
 		
 		System.out.printf("Circunferência: %.2f%n", c);
 		System.out.printf("Volume: %.2f%n", v);
-		System.out.printf("Valor do PI: %.2f%n", calc.PI);
+		System.out.printf("Valor do PI: %.2f%n", Calculadora.PI);
 		sc.close();
 	}
 }
